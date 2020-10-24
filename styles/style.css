@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  background-color: #C3D3CB ;
+  background-color: #C3D3CB;
   /* color:#FCFCFC; */
 }
 
@@ -91,6 +91,10 @@ h1 {
 
 h1 span {
   display: block;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 nav {
@@ -155,9 +159,9 @@ ul.sliding-menu a:focus {
 }
 
 
+/* I interpreted the about section as three smaller mini-sections that I numbered 1-3 */
 
-
-/* ABOUT styles */
+/* ABOUT-1 styles */
 .about-1{
   background-color: #152D20;
   padding-bottom: 20px;
@@ -165,10 +169,6 @@ ul.sliding-menu a:focus {
 
 .litter-box {
   padding: 60px 0;
-}
-
-.about-1 h2 {
-  font-size: 4rem;
 }
 
 .about-1 h2,
@@ -179,4 +179,28 @@ ul.sliding-menu a:focus {
 .about a {
   background-color: #FCFCFC;
   color: #152D20;
+}
+
+/* ABOUT-2 styles */
+
+.about-2 {
+  background-color: #C3D3CB;
+}
+
+.about-2 h2 {
+  padding-top: 30px;
+  color: #152D20;
+  text-align: center;
+}
+
+.lizard,
+.sheep {
+  width: calc((50%) - 5px);
+  display: inline-block;
+  margin: 50px 0;
+  float: left;
+}
+
+.lizard {
+  margin-right: 10px;
 }
