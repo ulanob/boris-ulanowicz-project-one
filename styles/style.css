@@ -50,7 +50,8 @@ a {
   color: #152D20;
 }
 
-a:hover {
+a:hover,
+a:focus {
   background-color: #C3D3CB;
   /* color:#FCFCFC; */
 }
@@ -159,8 +160,6 @@ ul.sliding-menu a:focus {
 }
 
 
-
-
 /* ABOUT-1 styles */
 .about-1{
   background-color: #152D20;
@@ -226,4 +225,31 @@ ul.sliding-menu a:focus {
 .about-3 span {
   display: block;
   padding: 20px 0 40px 0;
+}
+
+
+
+/* BLOG styles */
+.blog {
+  color: #152D20;
+  text-align: center;
+}
+
+.blog h2 {
+  padding-top: 40px;
+}
+
+.blog p {
+  padding-top: 20px;
+}
+
+.blog a {
+  background-color: #152D20;
+  color: #FCFCFC;
+}
+
+.blog a:hover,
+.blog a:focus {
+  background-color: #FCFCFC;
+  color: #152D20;
 }
