@@ -159,6 +159,8 @@ ul.sliding-menu a:focus {
   display: none;
 }
 
+/* I like the position fixed for the hamburger icon, but when you click on a link that takes you further down the page, the menu does not close and it stays on screen after the move.  */
+
 
 /* ABOUT-1 styles */
 .about-1{
@@ -252,4 +254,58 @@ ul.sliding-menu a:focus {
 .blog a:focus {
   background-color: #FCFCFC;
   color: #152D20;
+}
+
+/* CONTACT styles */
+
+.contact {
+  background-color: #152D20;
+}
+
+.contact a {
+  background-color: #152D20;
+  color: #FCFCFC;
+  width: calc(25%);
+  float: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font: 3rem 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.contact p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subscribe input,
+.subscribe button {
+  display: block;
+  width:100%;
+  height: 40px;
+}
+
+.subscribe input {
+  margin: 10px 0;
+  font: 2rem 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.subscribe button {
+  background-color: #000000;
+  font: 2rem 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.address p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
