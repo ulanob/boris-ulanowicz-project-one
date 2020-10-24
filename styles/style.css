@@ -195,7 +195,8 @@ ul.sliding-menu a:focus {
 }
 
 .lizard,
-.sheep {
+.sheep,
+.parrot {
   width: calc((50%) - 5px);
   margin: 50px 0;
   float: left;
@@ -204,6 +205,11 @@ ul.sliding-menu a:focus {
 .lizard {
   margin-right: 10px;
 }
+
+.parrot {
+  display: none;
+}
+
 
 .about-3{
   background-color: #152D20;
@@ -320,4 +326,101 @@ footer {
 footer p {
   color: #FCFCFC;
   text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 540px) {
+  .litter-box{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 780px) {
+  .lizard,
+  .sheep,
+  .parrot {
+    width: calc((100% - 20px) / 3);
+  }
+
+  .lizard,
+  .sheep  {
+    margin-right: 10px;
+  }
+
+  .parrot {
+    display: block;
+  }
+  
+  .icon-box {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .litter-box,
+  .suzie-text-container {
+    padding: 60px 0 0 0;
+  }
+  .litter-box {
+    width: 30%;
+    float: left;
+  }
+
+  .suzie-text-container {
+    width: 65%;
+    float: right;
+  }
+  .suzie-text-container a {
+    margin-left: 0;
+  }
+
+  .blog-image-container,
+  .blog-text-container{
+    width: 50%;
+    float: left;
+  }
+
+  .blog-text-container {
+    text-align: left;
+    padding: 40px;
+  }
+  .blog-text-container h2, 
+  .blog-text-container h3,
+  .blog-text-container p {
+    margin: 0;
+  }
+  .blog-text-container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .blog-text-container p {
+    font-size: 1rem;
+    padding: 20px 0 0 0;
+    line-height: 1.2rem;
+  }
+  .blog-text-container a {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+  }
+
+  .blog-swap {
+    clear: right;
+    float: right;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1100px) {
+
 }
