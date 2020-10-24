@@ -16,14 +16,23 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 html {
   font-size: 62.5%;
+  color: #FCFCFC;
+}
+
+h1, 
+h2,
+h3 {
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -31,3 +40,75 @@ img {
   height: auto;
   display: block;
 }
+
+.wrapper {
+  max-width: 1600px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* HEADER styles */
+header {
+  background-image: url(../animal-land-assets/image-1.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 30% bottom;
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  float: left;
+  /* line-height: 11.7rem; */
+  /* text also seems too dark here */
+}
+
+h1 span {
+  display: block;
+}
+
+nav {
+  width: 100%;
+  float: left;
+  position: fixed;
+}
+
+nav i{
+  font-size: 2.5rem;
+}
+
+header label {
+  position: fixed;
+  right: 30px;
+}
+
+ul.sliding-menu {
+  /* decide if fixed or not later */
+  position: fixed;
+  width: 85%;
+  top: 75px;
+   
+}
+
+ul.sliding-menu li {
+  margin-bottom: 4px;
+  background-color: #000000DD; 
+}
+
+ul.sliding-menu a {
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+  padding: 10px 0;
+  font: 2rem 'Cormorant Garamond', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#toggle {
+  display: none;
+}
+
