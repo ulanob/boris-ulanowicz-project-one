@@ -159,7 +159,7 @@ ul.sliding-menu a:focus {
 }
 
 
-/* I interpreted the about section as three smaller mini-sections that I numbered 1-3 */
+
 
 /* ABOUT-1 styles */
 .about-1{
@@ -196,11 +196,34 @@ ul.sliding-menu a:focus {
 .lizard,
 .sheep {
   width: calc((50%) - 5px);
-  display: inline-block;
   margin: 50px 0;
   float: left;
 }
 
 .lizard {
   margin-right: 10px;
+}
+
+.about-3{
+  background-color: #152D20;
+  padding: 60px 0;
+}
+
+.about-3 a {
+  background-color: #152D20;
+  height: auto;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: #FCFCFC;
+}
+
+.about-3 i {
+  font-size: 10rem;
+  display: block;
+  color: #FCFCFC;
+}
+
+.about-3 span {
+  display: block;
+  padding: 20px 0 40px 0;
 }
