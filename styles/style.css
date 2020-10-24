@@ -47,6 +47,10 @@ img {
   margin: 0 auto;
 }
 
+
+
+
+
 /* HEADER styles */
 header {
   background-image: url(../animal-land-assets/image-1.jpg);
@@ -85,27 +89,44 @@ header label {
   right: 30px;
 }
 
+/* Kind of a hybrid between Brent's sliding menu from Summer Web Dev but also with Esther's friend Nadia's use of height and overflow:hidden. Didn't want to use display:none because of accessibility so I tried to find different transitions that I could possibly use but couldn't come up with anything satisfactory!  */
+
 ul.sliding-menu {
   /* decide if fixed or not later */
   position: fixed;
   width: 85%;
   top: 75px;
-   
+  height: 0px;
+  overflow: hidden;
 }
 
 ul.sliding-menu li {
-  margin-bottom: 4px;
-  background-color: #000000DD; 
+  margin-bottom: 5px;
 }
 
 ul.sliding-menu a {
   width: 100%;
   height: 60px;
   display: inline-block;
-  padding: 10px 0;
+  padding: 15px 0;
   font: 2rem 'Cormorant Garamond', serif;
   text-align: center;
   text-transform: uppercase;
+  background-color: #000000DD; 
+  border: 2px solid #000000DD;
+}
+
+ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+  background-color: #152D20dd;
+  border: 2px solid #152D20;
+}
+
+#toggle:checked + ul.sliding-menu {
+  height: 100%;
+  left: auto;
+  top: 75px;
+  transition: all 0.75s;
 }
 
 #toggle {
