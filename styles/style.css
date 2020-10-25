@@ -80,6 +80,7 @@ header {
   background-size: cover;
   background-position: 30% bottom;
   padding-top: 10px;
+  position: relative;
 }
 
 h1 {
@@ -160,6 +161,27 @@ ul.sliding-menu a:focus {
 }
 
 /* I like the position fixed for the hamburger icon, but when you click on a link that takes you further down the page, the menu does not close and it stays on screen after the move.  */
+
+.social-media-icons {
+  height: 40px;
+  position: absolute;
+  margin: 0 auto 0 0;
+  top: -250px;
+  right: 60px;
+  
+}
+
+.social-media-icons a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  color: #FCFCFC;
+}
+
+
 
 
 /* ABOUT-1 styles */
@@ -450,7 +472,7 @@ footer p {
   h1 {
     width: 50%;
     float: right;
-    font-size: 8rem;
+    font-size: 9rem;
     text-align: right;
     padding: 100px 50px 0 0;
   }
@@ -564,6 +586,10 @@ footer p {
       text-align: right;
   }
   
+  .social-media-icons {
+    top: auto;
+    bottom: 250px;
+  }
 }
 
 
