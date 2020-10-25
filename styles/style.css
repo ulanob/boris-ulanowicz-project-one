@@ -63,7 +63,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1600px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -414,10 +414,35 @@ footer p {
     float: right;
   }
 
+  .about-2 span {
+    display: block;
+  }
+
   .subscribe input,
   .subscribe button {
     width: 50%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 950px) {
+  .blog-text-container {
+    padding-top: 0;
+  }
+
+  .blog h2 {
+    padding-top: 10%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .blog p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .blog a {
+    font-size: 1.8rem;
+    width: 200px;
+    height: 40px;
   }
 }
 
@@ -467,8 +492,78 @@ footer p {
     border: none;
   }
 
-  /* .blog-text-container,
-  .blog-image-container {
+  .blog-text-container {
+    padding: 6% 6% 0 6%;
+  }
+
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact h4 {
+    font-size: 2.2rem;
+  }
+  .newsletter p {
+    margin-bottom: 5px;
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe input,
+  .subscribe button {
+    float: left;
+  }
+
+  .subscribe input {
+    width: 75%;
+    text-align: start;
+  }
+
+  .subscribe input:placeholder-shown {
+    padding-left: 30px;
+  }
+
+  .subscribe button {
+    width: 25%;
+  }
+
+  .contact-info  {
+    width: 100%;
+  }
+
+  .contact-links,
+  .address {
+    width: 25%;
+    float: left;
+  }
+
+  .contact-links:first-child {
+    padding: 10px 0 0 0;
+  }
+
+  .contact-links a{
+    float: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .newsletter{
+    float: left;
     width: 50%;
-  } */
+  }
+  
+  .contact-links a {
+    height: auto;
+  }
+
+  .address h4,
+  .address p {
+      text-align: right;
+  }
+  
 }
+
+
