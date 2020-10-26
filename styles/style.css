@@ -168,7 +168,6 @@ ul.sliding-menu a:focus {
   margin: 0 auto 0 0;
   top: -250px;
   right: 60px;
-  
 }
 
 .social-media-icons a{
@@ -348,6 +347,22 @@ footer {
 footer p {
   color: #FCFCFC;
   text-align: center;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+  display: inline;
+  width: auto;
+  height: auto;
+  background-color: inherit;
+  color: inherit;
+  padding: inherit;
+  border: none;
+  margin: 0;
+  text-transform: none;
+  font: inherit;
+  text-decoration: underline;
 }
 
 /* RESPONSIVE */
@@ -591,5 +606,3 @@ footer p {
     bottom: 250px;
   }
 }
-
-
